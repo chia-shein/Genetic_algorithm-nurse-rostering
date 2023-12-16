@@ -1,4 +1,6 @@
 # Genetic_algorithm-nurse-rostering-scheduling
+![](./readme_img/results.png)
+
 [Final Paper]()
 
 ## Description
