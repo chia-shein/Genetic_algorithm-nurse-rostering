@@ -1,0 +1,34 @@
+[
+    {
+        "_info":"nurse related information",
+        "nurses":["Allson","Amy","Betty","Cindy","Ellie","Janey","Marilyn","Robin","Ruby","Tina"],
+        "shiftPreference":[
+            [1,0,0],
+            [1,1,0],
+            [0,0,1],
+            [0,1,0],
+            [0,0,1],
+            [1,1,1],
+            [0,1,1],
+            [1,1,1],
+            [0,1,0],
+            [0,0,1]
+        ],
+        "shiftMin":[2,2,1],
+        "shiftMax":[4,4,2],
+        "maxShiftsPerWeek":5
+    },
+    {
+        "_info":"rostering related information",
+        "HARD_CONSTRAINT_PENALTY":100,
+        "weeks":4
+    },
+    {
+        "_info":"Genetic Algorithm related information",
+        "POPULATION_SIZE":300,
+        "P_CROSSOVER":0.9,
+        "P_MUTATION":0.1,
+        "MAX_GENERATIONS":500,
+        "HALL_OF_FAME_SIZE":30
+    }
+]
