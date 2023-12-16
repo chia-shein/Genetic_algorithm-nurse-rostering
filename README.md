@@ -1,16 +1,23 @@
 # Genetic_algorithm-nurse-rostering-scheduling
 [Final Paper]()
+
 ## Description
 The scheduling planning of surgical operations in the operating room belongs to the NP-hard combinational problem, and this problem has the uncertainty of patients and operation time. Nowadays, many hospitals rely on the experience of shift staff to decide the shift order, which often results in long waiting times for patients and overtime work for medical staff. Excessive waiting time for patients, in addition to the risk to the patient's life, will also affect the patient's satisfaction with the hospital. Overtime work by medical staff may cause medical staff to reduce their work performance and increase the number of medical staff working overtime in the hospital. expenses.
 The operating room scheduling is different from the general ward nursing scheduling. In addition to considering the manpower needs of medical staff, the operating room scheduling also needs to take into account the priority of operations. Therefore, all possible factors in hospital scheduling planning are studied and adopted The genetic algorithm solves the scheduling problem of the operating room within an acceptable time, and achieves an objective scheduling method and shortens the waiting time of patients and overtime of medical staff.
 
+## Dependencies
+```shell
+pip install deap
+pip install seaborn
+```
+
 ## Our Setting
+* Binary Representation and Encoding.
+![](./readme_img/Binary_Representation.png)
+
 | Time | 7:00 ~ 15:00 | 15:00 ~ 23:00 | 23:00 ~ 7:00 |
 | :--: | :--: | :--: | :--: |
 | Shift | Early Shift | Afternoon Shift | Night Shift |
-
-* Binary Representation and Encoding.
-![](./readme_img/Binary_Representation.png)
 
 ## Problems
 * The nurse scheduling is known to have NP-hard complexity.
@@ -53,6 +60,13 @@ The operating room scheduling is different from the general ward nursing schedul
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | Value | 31 | 0.9 | 0.1 | 300 | 500 | 100 |
 
+| GA Part | Selection                | Crossover                          | Mutation           |
+|:------:|:------------------------:|:----------------------------------:|:------------------:|
+| Method | Random selection         | Two Point Crossover                | Inversion Mutation |
+| Method | Roulette wheel selection | Uniform Crossover with Probability | Gaussian Mutation  |
+| Method | Fitness Best Selection   | Partially Matched Crossover        | FlipBit Mutation   |
+| Method | Fitness Worst selection  | Order Crossover                    |          -         |
+
 ## Codes
 ### Rostering.py
 
@@ -67,6 +81,15 @@ The operating room scheduling is different from the general ward nursing schedul
 
 ## Datasets
 [Shift Scheduling Benchmark Datasets - Nurse Rostering Instances](http://www.schedulingbenchmarks.org/nrp/instances1_24.html)
+
+## Experiment Results
+
+
+## Future work
+1. Single Objective function improves to Multi-Objective function.
+2. Improved hard constraints for medical institutions.
+3. Address dynamic nurse shift situations.
+
 
 
 
