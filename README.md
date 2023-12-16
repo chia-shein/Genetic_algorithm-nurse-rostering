@@ -9,6 +9,8 @@ The operating room scheduling is different from the general ward nursing schedul
 | :--: | :--: | :--: | :--: |
 | Shift | Early Shift | Afternoon Shift | Night Shift |
 
+* Binary Representation and Encoding.
+![](./readme_img/Binary_Representation.png)
 
 ## Problems
 * The nurse scheduling is known to have NP-hard complexity.
@@ -50,9 +52,6 @@ The operating room scheduling is different from the general ward nursing schedul
 | Parameters | Days | Crossover | Mutation | Population | Generation |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | Value | 31 | 0.9 | 0.1 | 300 | 500 | 100 |
-
-* Binary Representation and Encoding.
-![](./readme_img/Binary_Representation.png)
 
 ## Codes
 ### Rostering.py
