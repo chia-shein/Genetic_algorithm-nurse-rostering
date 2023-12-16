@@ -4,6 +4,8 @@
 The scheduling planning of surgical operations in the operating room belongs to the NP-hard combinational problem, and this problem has the uncertainty of patients and operation time. Nowadays, many hospitals rely on the experience of shift staff to decide the shift order, which often results in long waiting times for patients and overtime work for medical staff. Excessive waiting time for patients, in addition to the risk to the patient's life, will also affect the patient's satisfaction with the hospital. Overtime work by medical staff may cause medical staff to reduce their work performance and increase the number of medical staff working overtime in the hospital. expenses.
 The operating room scheduling is different from the general ward nursing scheduling. In addition to considering the manpower needs of medical staff, the operating room scheduling also needs to take into account the priority of operations. Therefore, all possible factors in hospital scheduling planning are studied and adopted The genetic algorithm solves the scheduling problem of the operating room within an acceptable time, and achieves an objective scheduling method and shortens the waiting time of patients and overtime of medical staff.
 
+## Our Setting
+
 ## Problems
 * The nurse scheduling is known to have NP-hard complexity.
 * Manual shift scheduling requires certain experience.
@@ -13,7 +15,17 @@ The operating room scheduling is different from the general ward nursing schedul
 
 ## Constraints
 ### Hard Constraints
+1. An employee cannot be assigned more than one shift on a single day.
+2. Cannot schedule two consecutive shifts for the same nurse
+3. A minimum amount of rest is required after each shift.
+4. Minimum and Maximum shifts on a single day.
+5. After a night shift a nurse needs at least 14 hours off.
+6. A nurse should have 12 hours off after a shift for a given day.
+
 ### Soft Constraints
+1. If the specified shift is not assigned to the specified employee on the specified day.
+2. Nurse Preference.
+
 
 ## Data Descriptions
 ### data.json
