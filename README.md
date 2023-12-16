@@ -18,7 +18,7 @@ The operating room scheduling is different from the general ward nursing schedul
 ## Data Descriptions
 ### data.json
 * Set up a simple example and enter information about nurses, schedules, and algorithms.
-### Nurse-Related Information
+#### Nurse-Related Information
 ![](./readme_img/nurse_related.png)
 
 ## Codes
