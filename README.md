@@ -5,7 +5,9 @@ The scheduling planning of surgical operations in the operating room belongs to 
 The operating room scheduling is different from the general ward nursing scheduling. In addition to considering the manpower needs of medical staff, the operating room scheduling also needs to take into account the priority of operations. Therefore, all possible factors in hospital scheduling planning are studied and adopted The genetic algorithm solves the scheduling problem of the operating room within an acceptable time, and achieves an objective scheduling method and shortens the waiting time of patients and overtime of medical staff.
 
 ## Our Setting
-
+| Time | 7:00 ~ 15:00 | 15:00 ~ 23:00 | 23:00 ~ 7:00 |
+| :--: | :--: | :--: | :--: |
+| Shift | Early Shift | Afternoon Shift | Night Shift |
 
 
 ## Problems
@@ -45,10 +47,16 @@ The operating room scheduling is different from the general ward nursing schedul
   ![](./readme_img/GA_related.png)
 
 ## Genetic Algorithm Description
+| Parameters | Days | Crossover | Mutation | Population | Generation |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| Value | 31 | 0.9 | 0.1 | 300 | 500 | 100 |
 
+* Binary Representation and Encoding.
+![](./readme_img/Binary_Representation.png)
 
 ## Codes
 ### Rostering.py
+
 
 ## Related works
 * T.C. Wong, M. Xu, K.S. Chin, “A two-stage heuristic approach for nurse scheduling problem: A case study in an emergency department, ” ELSEVIER Computers & Operations Research, 2014.
