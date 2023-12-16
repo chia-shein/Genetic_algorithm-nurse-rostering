@@ -6,6 +6,8 @@ The operating room scheduling is different from the general ward nursing schedul
 
 ## Our Setting
 
+
+
 ## Problems
 * The nurse scheduling is known to have NP-hard complexity.
 * Manual shift scheduling requires certain experience.
