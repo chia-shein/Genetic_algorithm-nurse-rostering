@@ -26,6 +26,10 @@ The operating room scheduling is different from the general ward nursing schedul
 
   ![](./readme_img/rostering_related.png)
 
+* **Genetic Algorithm-Related Information**
+
+  ![](./readme_img/GA_related.png)
+
 ## Codes
 
 ## Related works
