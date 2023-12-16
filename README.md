@@ -22,6 +22,10 @@ The operating room scheduling is different from the general ward nursing schedul
 
   ![](./readme_img/nurse_related.png)
 
+* **Rostering-Related Information**
+
+  ![](./readme_img/rostering_related.png)
+
 ## Codes
 
 ## Related works
