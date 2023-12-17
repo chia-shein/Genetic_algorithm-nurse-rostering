@@ -30,17 +30,15 @@ pip install seaborn
 
 ## Constraints
 ### Hard Constraints
-1. An employee cannot be assigned more than one shift on a single day.
-2. Cannot schedule two consecutive shifts for the same nurse
-3. A minimum amount of rest is required after each shift.
-4. Minimum and Maximum shifts on a single day.
-5. After a night shift a nurse needs at least 14 hours off.
-6. A nurse should have 12 hours off after a shift for a given day.
+1. Each nurse can only work one shift a day.
+2. Each nurse can't schedule two consecutive shifts.
+3. Each nurse must take two day-off during the week.
+4. During the early shift, there must be at least two to four nurses.
+5. During the afternoon shift, there must be at least two to four nurses.
+6. During the night shift, there must be at least one to two nurses.
 
 ### Soft Constraints
-1. If the specified shift is not assigned to the specified employee on the specified day.
-2. Nurse Preference.
-
+1. Each nurse shifts preference.
 
 ## Data Descriptions
 ### data.json
