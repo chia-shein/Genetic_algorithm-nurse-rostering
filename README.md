@@ -88,7 +88,17 @@ pip install seaborn
 [Shift Scheduling Benchmark Datasets - Nurse Rostering Instances](http://www.schedulingbenchmarks.org/nrp/instances1_24.html)
 
 ## Experiment Results
-
+| Selection | Crossover | Mutation | Min Fitness Value | Mean Fitness Value |
+| :--: | :--: | :--: | :--: | :--: |
+| Random | Two point | FlipBit | 319.0 | 542.48 |
+| Roulette wheel | Two point | FlipBit | 16128.0 | 40727.8 |
+| Fitness Best | Two point | FlipBit | 313.0 | 322.6 |
+| Fitness Worst | Two point | FlipBit | 19029.0 | 63359.1 |
+| Fitness Best | Uniform(0.3) | FlipBit | 114.0 | 128.0 |
+| Fitness Best | Uniform(0.5) | FlipBit | 11.0 | 23.01 |
+| Fitness Best | Uniform(0.7) | FlipBit | 8.0 | 17.67 |
+| Fitness Best | Partially Matched | FlipBit | 10.0 | 22.01 |
+| Fitness Best | Ordered | FlipBit | 111.0 | 124.01 |
 
 ## Future work
 1. Single Objective function improves to Multi-Objective function.
