@@ -73,7 +73,10 @@ pip install seaborn
 | Method | Fitness Worst selection  | Order Crossover                    |          -         |
 
 ## Codes
-### Rostering.py
+### rostering.py
+```shell
+  python rostering.py
+```
 
 ## Datasets
 [Shift Scheduling Benchmark Datasets - Nurse Rostering Instances](http://www.schedulingbenchmarks.org/nrp/instances1_24.html)
