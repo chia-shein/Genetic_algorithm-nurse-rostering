@@ -17,6 +17,12 @@ pip install seaborn
 * Binary Representation and Encoding.
 ![](./readme_img/Binary_Representation.png)
 
+shift presentation:
+
+| Shift | Early Shift | Afternoon Shift | Night Shift | Day-off |
+| :--: | :--: | :--: | :--: | :--: |
+| Representation | [1,0,0] | [0,1,0] | [0,0,1] | [0,0,0] |
+
 | Time | 7:00 ~ 15:00 | 15:00 ~ 23:00 | 23:00 ~ 7:00 |
 | :--: | :--: | :--: | :--: |
 | Shift | Early Shift | Afternoon Shift | Night Shift |
