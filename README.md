@@ -22,10 +22,7 @@ shift presentation:
 | Shift | Early Shift | Afternoon Shift | Night Shift | Day-off |
 | :--: | :--: | :--: | :--: | :--: |
 | Representation | [1,0,0] | [0,1,0] | [0,0,1] | [0,0,0] |
-
-| Time | 7:00 ~ 15:00 | 15:00 ~ 23:00 | 23:00 ~ 7:00 |
-| :--: | :--: | :--: | :--: |
-| Shift | Early Shift | Afternoon Shift | Night Shift |
+| Time | 7:00 ~ 15:00 | 15:00 ~ 23:00 | 23:00 ~ 7:00 | - |
 
 ## Problems
 * The nurse scheduling is known to have NP-hard complexity.
