@@ -1,7 +1,7 @@
 # Genetic_algorithm-nurse-rostering-scheduling
 ![](./readme_img/results.png)
 
-More detail description about the genetic algorithm and the Experiment result, look the [Final Paper]().
+More detail description about the genetic algorithm and the Experiment result, look the [Final Paper](https://github.com/chia-shein/Genetic_algorithm-nurse-rostering/blob/main/Final_Project_Paper.pdf).
 
 ## Description
 The scheduling planning of surgical operations in the operating room belongs to the NP-hard combinational problem, and this problem has the uncertainty of patients and operation time. Nowadays, many hospitals rely on the experience of shift staff to decide the shift order, which often results in long waiting times for patients and overtime work for medical staff. Excessive waiting time for patients, in addition to the risk to the patient's life, will also affect the patient's satisfaction with the hospital. Overtime work by medical staff may cause medical staff to reduce their work performance and increase the number of medical staff working overtime in the hospital. expenses.
