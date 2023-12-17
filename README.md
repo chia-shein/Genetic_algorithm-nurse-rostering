@@ -1,7 +1,7 @@
 # Genetic_algorithm-nurse-rostering-scheduling
 ![](./readme_img/results.png)
 
-[Final Paper]()
+More detail description about the genetic algorithm and the Experiment result, look the [Final Paper]().
 
 ## Description
 The scheduling planning of surgical operations in the operating room belongs to the NP-hard combinational problem, and this problem has the uncertainty of patients and operation time. Nowadays, many hospitals rely on the experience of shift staff to decide the shift order, which often results in long waiting times for patients and overtime work for medical staff. Excessive waiting time for patients, in addition to the risk to the patient's life, will also affect the patient's satisfaction with the hospital. Overtime work by medical staff may cause medical staff to reduce their work performance and increase the number of medical staff working overtime in the hospital. expenses.
@@ -75,6 +75,39 @@ pip install seaborn
 ## Codes
 ### Rostering.py
 
+## Datasets
+[Shift Scheduling Benchmark Datasets - Nurse Rostering Instances](http://www.schedulingbenchmarks.org/nrp/instances1_24.html)
+
+## Experiment Results
+| ID | Selection | Crossover | Mutation | Min Fitness Value | Mean Fitness Value |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| a | Random | Two point | FlipBit | 319.0 | 542.48 |
+| b | Roulette wheel | Two point | FlipBit | 16128.0 | 40727.8 |
+| c | Fitness Best | Two point | FlipBit | 313.0 | 322.6 |
+| d | Fitness Worst | Two point | FlipBit | 19029.0 | 63359.1 |
+| e | Fitness Best | Uniform(0.3) | FlipBit | 114.0 | 128.0 |
+| f | Fitness Best | Uniform(0.5) | FlipBit | 11.0 | 23.01 |
+| g | Fitness Best | Uniform(0.7) | FlipBit | 8.0 | 17.67 |
+| h | Fitness Best | Partially Matched | FlipBit | 10.0 | 22.01 |
+| i | Fitness Best | Ordered | FlipBit | 111.0 | 124.01 |
+
+![](./readme_img/Exp_flow.png)
+
+* We choose the best combination (Fitness Best Selection + Uniform Crossover (0.7) + FlipBit Mutation) in the experimental data to output the best 31-day nurse scheduling results.
+* To make it easier for nurses to view their shift schedules respectively, 
+we also output the results of the nurses' shift schedules in Excel.
+
+## Conclusion
+We use 0-1 programming to construct nurses' schedules for implementation and refer to relevant literature 
+to select and define relevant constraints that meet domestic nurses' schedules. It also considers nurses' schedule 
+preferences, 
+and finally designs in Objective Among the functions, the experiment shows that the combination of Fitness Best Selection + Uniform Crossover (0.7) + FlipBit 
+Mutation of the Genetic Operator of the Genetic Algorithm can get the best scheduling results.
+
+## Future work
+1. Single Objective function improves to Multi-Objective function.
+2. Improved hard constraints for medical institutions.
+3. Address dynamic nurse shift situations.
 
 ## Related works
 * T.C. Wong, M. Xu, K.S. Chin, “A two-stage heuristic approach for nurse scheduling problem: A case study in an emergency department, ” ELSEVIER Computers & Operations Research, 2014.
@@ -83,29 +116,6 @@ pip install seaborn
 * Nuraddeen Ado Muhammad, Aliyu Rabiu Shu’aibu, Yusuf Idris, Mohammed Toro Lawal, “Solving Nurse Rostering Problem Using Genetic Algorithm,” International Conference on Electrical Engineering Applications (ICEEA'2020), 2020.
 * Oluwaseun M. Alade, Akeem O. Amusat, Oluyinka T. Adedeji, “SOLVING NURSE SCHEDULING PROBLEM USING CONSTRAINT PROGRAMMING (CP) TECHNIQUE, ” 2019.
 * Hiroharu Kawanaka, Kosuke Yamamoto, Tomohiro Yoshikawa, Tsuyoshi Shinogi, Shinji Tsuruoka, “Genetic Algorithm with the Constraints for Nurse Scheduling Problem, ” Proceedings of the 2001 Congress on Evolutionary Computation (IEEE Cat. No.01TH8546), 2001.
-
-## Datasets
-[Shift Scheduling Benchmark Datasets - Nurse Rostering Instances](http://www.schedulingbenchmarks.org/nrp/instances1_24.html)
-
-## Experiment Results
-| Selection | Crossover | Mutation | Min Fitness Value | Mean Fitness Value |
-| :--: | :--: | :--: | :--: | :--: |
-| Random | Two point | FlipBit | 319.0 | 542.48 |
-| Roulette wheel | Two point | FlipBit | 16128.0 | 40727.8 |
-| Fitness Best | Two point | FlipBit | 313.0 | 322.6 |
-| Fitness Worst | Two point | FlipBit | 19029.0 | 63359.1 |
-| Fitness Best | Uniform(0.3) | FlipBit | 114.0 | 128.0 |
-| Fitness Best | Uniform(0.5) | FlipBit | 11.0 | 23.01 |
-| Fitness Best | Uniform(0.7) | FlipBit | 8.0 | 17.67 |
-| Fitness Best | Partially Matched | FlipBit | 10.0 | 22.01 |
-| Fitness Best | Ordered | FlipBit | 111.0 | 124.01 |
-
-## Future work
-1. Single Objective function improves to Multi-Objective function.
-2. Improved hard constraints for medical institutions.
-3. Address dynamic nurse shift situations.
-
-
 
 
 
